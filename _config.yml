@@ -1,1 +1,5 @@
-theme: minima
+title: Throw Brain Away
+description: I would like to illustrate some research papers and knowledge in new-leaner friendly way here.
+show_downloads: False
+google_analytics:
+theme: jekyll-theme-hacker
