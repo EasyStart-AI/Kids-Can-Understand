@@ -19,6 +19,15 @@ layout: default
     + Bit slicing
         + Several works would apply bit slicing technique to limit the precision of per column in 
 
+## Weight mapping precision
+*(All content in this section is summarized from reference 8)*
+Though theoretically, the weight mapping on to the PCM tiles could achieve 100% convergence bu applying the closed loop iterative programming (this is a typical method used in PCM weight programming), the conductance could vary with time. 
+![](./figures/weight_time.png)
+Actually the programmed weight could be described as
+$$G_m(t_c)=G(t_c)+n_G(t_c)$$ 
+$t_c$ represents the time from programming to read. In this equation $G(t_c)$ represents the *noise free conductance* and $n_G(t_c)$ represents the *read noise* 
+
+
 # References
 - *All affiliation in those papers is IBM, Mean author is Manuel Le Gallo and Abu Sebastian*
 1. [PCM physics] An overview of phase-change memory device physics ()
@@ -28,7 +37,7 @@ layout: default
 5. Using the IBM analog in-memory hardware acceleration kit for neural network training and inference
 6. Fully On-Chip MAC at 14 nm Enabled by Accurate Row-Wise Programming of PCM-Based Weights and Parallel Vector-Transport in Duration-Format
 7. Computational memory-based inference and training of deep neural networks
-
+8. Nandakumar S R, Boybat I, Han J P, et al. Precision of synaptic weights programmed in phase-change memory devices for deep learning inference[C]//2020 IEEE International Electron Devices Meeting (IEDM). IEEE, 2020: 29.4. 1-29.4. 4.
 
 * [Previous page](./Basic-theory-and-structures-of-analog-CIM.html)
 * [Next page](./How-are-weights-mapped-on-analog-tiles.html)
